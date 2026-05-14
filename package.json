@@ -1,0 +1,29 @@
+{
+  "name": "serverless-router-api",
+  "version": "0.1.0",
+  "description": "Secure API proxy with automatic failover, request deduplication, and cost-aware routing for Xiaomi MiMo endpoints.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "lint": "eslint src --ext .ts",
+    "start": "ts-node src/index.ts"
+  },
+  "keywords": ['api-gateway', 'mimo', 'microservices', 'rate-limiting'],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.7.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.5.0",
+    "ts-node": "^10.9.2",
+    "vitest": "^1.6.0",
+    "eslint": "^9.5.0"
+  }
+}
